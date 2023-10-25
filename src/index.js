@@ -6,7 +6,7 @@ const cors = require('cors');
 const httpStatus = require('http-status');
 
 const app = express();
-const PORT = 1802;
+const PORT = process.env.PORT || 1802;
 
 // set security HTTP headers
 app.use(helmet());
